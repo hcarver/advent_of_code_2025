@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
         if l[0] == 'L':
             count += (((100 - dial) % 100) + number) // 100
-            dial = (100000 + dial - number) % 100
+            dial = (dial - number) % 100
         else:
             count += (dial + number) // 100
             dial = (dial + number) % 100
